@@ -22,7 +22,7 @@ app "one" {
     use "pack" {}
     registry {
       use "docker" {
-        image = "one"
+        image = "localhost:5001/waypoint-test/one"
         tag   = "1"
         local = false
       }
@@ -66,7 +66,7 @@ app "two" {
     use "pack" {}
     registry {
       use "docker" {
-        image = "two"
+        image = "localhost:5001/waypoint-test/two"
         tag   = "1"
         local = false
       }
@@ -102,7 +102,7 @@ app "default" {
     use "pack" {}
     registry {
       use "docker" {
-        image = "default"
+        image = "localhost:5001/waypoint-test/default"
         tag   = "1"
         local = false
       }
